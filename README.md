@@ -35,6 +35,8 @@ Capturing the account digits triggers an output context named auth_in_progress w
 
 To simulate a secure, production-grade One-Time Passcode (OTP) verification for this prototype without an active gateway, I mapped the identity.verify_otp intent to accept 6-digit numeric sequences. Once input, the model replaces auth_in_progress with an authenticated context pill.
 
+![OTP passcode image](images/OTP-code.png)
+
 The final account.balance.check intent is padlocked with an Input Context requirement of authenticated. If an unauthenticated user types "What's my balance?", the intent refuses to trigger, preventing unauthorised data exposure.
 
 
