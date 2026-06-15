@@ -23,7 +23,8 @@ Instead of expecting rigid terminology, I built a custom entity mapping referenc
 -	Savings Account: Savings, ISA, nest egg, rainy day fund, emergency fund. 
 -	Credit Card Account: Credit card, credit card account, VISA.
 
- 
+![Account Type image](https://github.com/kirsty-schofield/dialogflow-concept/blob/main/images/Account-type.png)
+
 ### Designing Contextual Logic Gates for Security
 
 A critical design choice was never allowing a user to provide permanent sensitive credentials (like an ATM PIN or full account number) directly into a standard chat bubble over the internet. Doing so introduces severe security, logging, and compliance risks. Instead, I implemented a robust, state-managed authentication loop using Dialogflow ES Contexts as short-term memory logic gates.
